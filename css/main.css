@@ -350,3 +350,10 @@
 .channel__img:hover img {
     transform: scale(1.1);
 }
+
+
+/* now section - start */
+.now__inner {
+    padding: 308px 0 320px;
+    background: url(../img/hyundaiNow/bg_hyundai_now.png) no-repeat 100% 100%;
+}

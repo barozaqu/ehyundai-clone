@@ -12,6 +12,11 @@
     width: 1280px;
     margin: 0 auto;
 }
+.flex {
+    display: flex;
+    justify-content: center;
+}
+/* shopping news active */
 .top {
     top: 120px;
 }
@@ -21,8 +26,4 @@
 }
 .bottom {
     top: calc(100% - 990px);
-}
-.flex {
-    display: flex;
-    justify-content: center;
 }
