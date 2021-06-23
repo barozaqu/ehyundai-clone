@@ -151,8 +151,9 @@
 
 /* contents */
 .contents__container {
-
+    /* line-height: 1.4; */
 }
+/* main section - start */
 .main {
 
 }
@@ -176,5 +177,60 @@
 .main__img > a > span {
     opacity: 0;
 }
-
-
+/* news section - start */
+.news {
+    z-index: 10;
+}
+.news__inner {
+    position: relative;
+    min-height: 1162px;
+    padding-top: 120px;
+    /* common padding */
+}
+.left__magazine {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 20;
+}
+.right__news {
+    margin-left: 430px;
+    width: 850px;
+}
+.news__title {
+    position: absolute;
+    top: 120px;
+    left: 430px;
+    width: 100%;
+    padding-bottom: 38px;
+    color: #fff;
+    text-align: left;
+    z-index: 20;
+}
+.news__list {
+    margin-left: -40px;
+    font-size: 0;
+    margin-top: 93px;
+}
+.news__list > a {
+    position: relative;
+}
+.news__item {
+    display: inline-block;
+    width: calc((100% - 40px) / 3);
+    margin-left: 20px;
+    transition: transform .6s;
+}
+.news__item:nth-child(3n + 1) {
+    margin-left: 0;
+}
+.news__item:not(:nth-child(3n - 1)) {
+    transform: translateY(0);
+    /* class on 적용 되었을 때 적용되도록 한다 */
+}
+.news__item:not(:nth-child(3n - 1)) {
+    transform: translateY(-50%);
+}
+.news__item:nth-child( n + 4) {
+    margin-top: 20px;
+}

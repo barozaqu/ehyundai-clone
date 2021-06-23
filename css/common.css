@@ -3,3 +3,18 @@
     display: block;
     clear: both;
 }
+.inner {
+    position: inherit;
+    width: 1280px;
+    margin: 0 auto;
+}
+.top {
+    top: 120px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.bottom {
+    top: calc(100% - 990px);
+}
