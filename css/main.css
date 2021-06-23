@@ -37,7 +37,6 @@
     width: 21px;
     height: 21px;
     background: url(../img/icon/header_util.png) no-repeat -5px -5px;
-    border: 1px solid #000;
 }
 .header__menu--service {
     position: absolute;
@@ -76,6 +75,7 @@
     float: left;
 }
 .gnb__item--name {
+    /* border: 1px solid #000; */
     position: relative;
     height: 72px;
     letter-spacing: -0.1em;
@@ -84,7 +84,7 @@
 
 /* lnb */
 .lnb__frame {
-    /* display: block;
+    display: block;
     position: absolute;
     z-index: 30;
     top: 72px;
@@ -93,13 +93,14 @@
     overflow: hidden;
     padding: 0 0 24px 0;
     min-height: 216px;
-    transition: all 0.8s; */
+    transition: all 0.8s;
 }
 .lnb {
-
 }
 .lnb__item {
     float: left;
+    position: relative;
+    border: 1px solid #000;
     margin-top: 24px;
     min-width: 140px;
 }
@@ -107,9 +108,73 @@
 }
 .lnb__item--title > span {
     float: left;
+    position: relative;
+    display: block;
     height: 22px;
     line-height: 22px;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
+.subnav__frame {
+    position: relative;
+}
+.subnav__item {
+    width: 100px;
+    font-size: 14px;
+    position: absolute;
+}
+.subnav__frame > li:nth-child(1) {
+    top: 0;
+}
+.subnav__frame > li:nth-child(2) {
+    top: 22px;
+}
+.subnav__frame > li:nth-child(3) {
+    top: 44px;
+}
+.subnav__frame > li:nth-child(4) {
+    top: 66px;
+}
+.subnav__frame > li:nth-child(5) {
+    top: 88px;
+}
+.subnav__frame > li:nth-child(6),
+.subnav__frame > li:nth-child(7),
+.subnav__frame > li:nth-child(8),
+.subnav__frame > li:nth-child(9),
+.subnav__frame > li:nth-child(10) {
+    left: 100px;
+}
+/* 더 나은 방법 idea check flex? gnb skip to last */
+
+
+/* contents */
+.contents__container {
+
+}
+.main {
+
+}
+.main__img {
+    background :#afc8e9 url(../img/main/happy.jpg) 50% 0 no-repeat;
+    position: relative;
+    left: 50%;
+    width: 2600px;
+    height: 600px;
+    margin-left: -1300px;
+    text-align: center;
+}
+.main__img > a {
+    position: absolute;
+    bottom: 53px;
+    left: 50%;
+    width: 125px;
+    height: 18px;
+    margin-left: 363px;
+}
+.main__img > a > span {
+    opacity: 0;
+}
+
+
