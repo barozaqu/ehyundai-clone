@@ -151,7 +151,6 @@
 
 /* contents */
 .contents__container {
-    /* line-height: 1.4; */
 }
 /* main section - start */
 .main {
@@ -233,4 +232,16 @@
 }
 .news__item:nth-child( n + 4) {
     margin-top: 20px;
+}
+
+/* channel section - start */
+.channel {
+    margin-top: 200px;
+}
+.channel .inner {
+    text-align: center;
+}
+.channel__title {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #222;
 }

@@ -3,6 +3,10 @@
     display: block;
     clear: both;
 }
+.section {
+    position: relative;
+    line-height: 1.4;
+}
 .inner {
     position: inherit;
     width: 1280px;
