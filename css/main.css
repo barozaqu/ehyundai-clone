@@ -323,7 +323,6 @@
 }
 .item__container {
     display: block;
-    /* width: 100%; */
     vertical-align: bottom;
     margin: 60px 85px 100px;
 }
@@ -352,8 +351,51 @@
 }
 
 
+
+
+
 /* now section - start */
 .now__inner {
     padding: 308px 0 320px;
     background: url(../img/hyundaiNow/bg_hyundai_now.png) no-repeat 100% 100%;
+}
+.now__container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.now__item {
+    /* border: 1px solid #000; */
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+.now__item > a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity .4s;
+}
+.now__item > a .now__img--bg {
+    transform: scale(1);
+    transition: .4s;
+}
+.now__item > a:hover .now__img--bg {
+    transform: scale(1.1);
+}
+.now__item > a:hover:after {
+    opacity: 1;
+}
+.now__img {
+    position: absolute;
+    width: 300px;
+    top: 418px;
+    left: 20px;
+    z-index: 10;
 }
