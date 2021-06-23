@@ -1,3 +1,65 @@
 @charset "utf-8";
 @import url(./reset.css);
 @import url(./common.css);
+
+/* header */
+.header {
+    width: 984px;
+    margin: 0 auto;
+    padding: 36px 0 0 0;
+}
+.header__frame {
+    position: relative;
+    z-index: 20;
+    background: #fff;
+    /* var(--wht-color); */
+    
+    border-bottom: 1px solid #ccc;
+}
+.header__top {
+    margin: 0 auto;
+    text-align: center;
+}
+.header__menu {
+}
+.header__menu--search {
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 21px;
+}
+.header__menu--search > span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background: url(../img/icon/header_util.png) no-repeat -5px -5px;
+    border: 1px solid #000;
+}
+.header__menu--service {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: 14px;
+}
+.header__menu--service > a {
+    margin-right: 20px;
+}
+.header__menu--language > a {
+    text-decoration: underline dotted;
+}
+.language__select {
+    /* content: ''; */
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -24px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/header_util.png) no-repeat 0 -24px;
+}
