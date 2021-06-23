@@ -508,15 +508,14 @@
     position: relative;
     justify-content: space-between;
     color: #666;
-    border: 1px solid #000;
     line-height: 24px;
     font-size: 12px;
+    line-height: 24px;
 }
 .bottom__sns > div {
     position: relative;
+    margin-bottom: 6px;
 }
-
-
 .sns__icon::after {
     content: '';
     display: block;
@@ -525,7 +524,7 @@
     left: 0;
     width: 24px;
     height: 24px;
-    margin-left: -24px;
+    margin-left: -28px;
     background-image: url(../img/footer/footer_sns.png);
     background-repeat: no-repeat;
 }
@@ -543,4 +542,10 @@
 }
 .post::after {
     background-position: 0 -120px;
+}
+.info__certification {
+    margin-top: 20px;
+}
+.info__certification > img {
+    height: 40px;
 }
