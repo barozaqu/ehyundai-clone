@@ -435,6 +435,8 @@
     margin: 0 auto;
     padding-bottom: 88px;
     width: 984px;
+    font-size: 12px;
+    border: 1px solid #000;
 }
 .footer__up {
     position: relative;
@@ -548,4 +550,13 @@
 }
 .info__certification > img {
     height: 40px;
+}
+.copyright {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    transform: translateY(200%);
+    border: 1px solid #000;
+    color: #666666;
 }
