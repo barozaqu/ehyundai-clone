@@ -1,4 +1,14 @@
 @charset "utf-8";
+:root {
+    /* color setting */
+    
+    /* font setting */
+
+
+    /* margin setting */
+
+}
+
 .clearfix {
     display: block;
     clear: both;
@@ -14,7 +24,14 @@
 }
 .flex {
     display: flex;
+}
+.flex__center {
+    display: flex;
     justify-content: center;
+}
+.flex__wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 /* shopping news active */
 .top {

@@ -83,10 +83,10 @@
     transition: all .3s;
 }
 /* gnb hover 시 이벤트 */
-.gnb__list:hover ~ .lnb__frame {
+.gnb__list:hover ~ .lnb__frame > div {
     display: flex;
 }
-.lnb__frame:hover {
+.lnb__frame > div:hover {
     display: flex;
 }
 /* 코드 지저분 개선 방안 물어볼 것 */
@@ -121,14 +121,14 @@
 /* lnb - start */
 .lnb__frame {
     /* display: flex; */
-    display: none;
-    padding-top: 24px;
-    position: relative;
-    /* border: 1px solid #000; */
-    
-    
-    
     /* display: none; */
+    /* padding-top: 24px; */
+    /* position: relative; */
+    /* border: 1px solid #000; */
+}
+.lnb {
+    display: flex;
+    padding-top: 24px;
 }
 .lnb__item {
     width: 100%;
@@ -137,29 +137,34 @@
     flex: 1;
 }
 .lnb__item:nth-child(1) {
-    display: block;
-    flex: 1.5;
 }
 .lnb__item:nth-child(2) {
 }
 .lnb__item:nth-child(3) {
-    flex: 0.5;
 }
 
 .lnb__img > img {
     width: 100%;
 }
+/* bland img 특수 경우 */
+.lnb__img > .flex {
+    flex-direction: column;
+}
+
+
 .lnb__content {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 150px;
+    height: 200px;
+    /* 높이값 설정해 준 것 수정 가능 한지 여부? */
     color: #666;
     margin-top: 10px;
-    
 }
 .lnb__content > a {
+    font-size: 14px;
+    /* common font- size로 */
     margin-right: 5px;
     margin-top: 5px;
 }
