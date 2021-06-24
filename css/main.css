@@ -5,12 +5,15 @@
 /* header */
 .header {
     width: 100%;
+    
+    
     border-bottom: 1px solid #ccc;
+    /* gnb title hover 시 lnb 위에 전체 라인 보이도록 */
 }
 .header__frame {
     margin: 0 auto;
-    padding: 36px 0 0 0;
     width: 984px;
+    padding: 36px 0 0 0;
     position: relative;
     z-index: 20;
     background: #fff;
@@ -73,37 +76,64 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-
 }
 .gnb__title {
+    position: relative;
     color: #666;
-    transition: .3s;
+    transition: all .3s;
 }
+/* gnb hover 시 이벤트 */
+.gnb__list:hover ~ .lnb__frame {
+    display: flex;
+}
+.lnb__frame:hover {
+    display: flex;
+}
+/* 코드 지저분 개선 방안 물어볼 것 */
+
+
 .gnb__title:hover {
     color: #222;
+}
+.gnb__title a:after {
+    content : '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width : 0;
+    transition: .3s;
+    left : 50%;
+    transform: translateX(-50%);
+    background: #111;
+}
+.gnb__title a:hover:after {
+    width: 100%;
 }
 .gnb__title > a {
     height: 72px;
     line-height: 72px;
     font-size: 18px;
     font-weight: 600;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #000;1` */
 }
+
 
 /* lnb - start */
 .lnb__frame {
-    display: flex;
+    /* display: flex; */
+    display: none;
     padding-top: 24px;
+    position: relative;
     /* border: 1px solid #000; */
-
-
-
+    
+    
+    
     /* display: none; */
 }
 .lnb__item {
     width: 100%;
     margin-right: 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     flex: 1;
 }
 .lnb__item:nth-child(1) {
@@ -127,14 +157,14 @@
     height: 150px;
     color: #666;
     margin-top: 10px;
-    /* border: 1px solid red; */
     
 }
 .lnb__content > a {
-    border: 1px solid #000;
     margin-right: 5px;
     margin-top: 5px;
-    /* border: 1px solid #000; */
+}
+.lnb__content > a:hover {
+    text-decoration: underline;
 }
 
 /* 기존방식 */
@@ -255,8 +285,9 @@
     overflow: hidden;
 }
 .main__banner img {
-    height: 600px;
+    text-align: center;
     /* 본 홈페이지 사이즈와 차이 있음!!!!!!!!!!! */
+    /* 줄일 때 같이 줄어든다  */
 }
 
 /* news section - start */
@@ -607,7 +638,10 @@
 .info__certification {
     margin-top: 20px;
 }
-.info__certification > img {
+.info__certification > a {
+    display: inline-block;
+}
+.info__certification img {
     height: 40px;
 }
 .copyright {
