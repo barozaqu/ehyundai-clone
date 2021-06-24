@@ -63,8 +63,12 @@
     background: url(../img/icon/header_util.png) no-repeat 0 -24px;
 }
 
+
+
+
+/* 기존방식 */
 /* gnb */
-.gnb__frame {
+/* .gnb__frame {
     font-size: 18px;
     position: relative;
 }
@@ -75,14 +79,12 @@
     display: flex;
 }
 .gnb__item--name {
-    /* border: 1px solid #000; */
     position: relative;
     height: 72px;
     letter-spacing: -0.1em;
     white-space: nowrap;
-}
-
-/* lnb */
+} */
+/* 
 .lnb__frame {
     display: none;
     position: absolute;
@@ -114,7 +116,6 @@
     line-height: 22px;
     font-size: 14px;
     font-weight: bold;
-    /* border: 1px solid #000; */
 }
 .subnav__frame {
     position: relative;
@@ -146,8 +147,7 @@
 .subnav__frame > li:nth-child(10) {
     left: 100px;
 }
-/* 더 나은 방법 idea check flex? gnb skip to last */
-
+ */
 
 
 /* arrow top btn */
@@ -176,35 +176,21 @@
 
 
 
-/* contents */
+/* contents wrap */
 .contents__container {
 }
 /* main section - start */
 .main {
-
+    overflow: hidden;
 }
-.main__img {
-    background :#afc8e9 url(../img/main/happy.jpg) 50% 0 no-repeat;
-    position: relative;
-    left: 50%;
-    width: 2600px;
+.main__banner img {
     height: 600px;
-    margin-left: -1300px;
-    text-align: center;
+    /* 본 홈페이지 사이즈와 차이 있음!!!!!!!!!!! */
 }
-.main__img > a {
-    position: absolute;
-    bottom: 53px;
-    left: 50%;
-    width: 125px;
-    height: 18px;
-    margin-left: 363px;
-}
-.main__img > a > span {
-    opacity: 0;
-}
+
 /* news section - start */
 .news {
+    overflow: hidden;
     z-index: 10;
 }
 .news__inner {
@@ -430,13 +416,15 @@
 
 
 /* footer - start */
+.footer {
+    overflow: hidden;
+}
 .footer__container {
     position: relative;
     margin: 0 auto;
     padding-bottom: 88px;
     width: 984px;
     font-size: 12px;
-    border: 1px solid #000;
 }
 .footer__up {
     position: relative;
@@ -557,9 +545,5 @@
     left: 0;
     bottom: 0;
     transform: translateY(200%);
-    border: 1px solid #000;
     color: #666666;
-}
-.main__banner img {
-    width: 100%;
 }
