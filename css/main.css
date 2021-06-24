@@ -72,7 +72,7 @@
 
 }
 .gnb__item {
-    float: left;
+    display: flex;
 }
 .gnb__item--name {
     /* border: 1px solid #000; */
@@ -559,4 +559,7 @@
     transform: translateY(200%);
     border: 1px solid #000;
     color: #666666;
+}
+.main__banner img {
+    width: 100%;
 }
