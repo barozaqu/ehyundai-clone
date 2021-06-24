@@ -8,7 +8,6 @@
     /* margin setting */
 
 }
-
 .clearfix {
     display: block;
     clear: both;
@@ -22,6 +21,8 @@
     width: 1280px;
     margin: 0 auto;
 }
+
+/* flex */
 .flex {
     display: flex;
 }
@@ -29,10 +30,19 @@
     display: flex;
     justify-content: center;
 }
+.flex__start {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex__col {
+    display: flex;
+    flex-direction: column;
+}
 .flex__wrap {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* shopping news active */
 .top {
     top: 120px;

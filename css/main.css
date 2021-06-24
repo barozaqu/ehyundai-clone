@@ -25,6 +25,7 @@
     text-align: center;
 }
 .header__menu {
+    position: relative;
 }
 .header__menu--search {
     display: block;
