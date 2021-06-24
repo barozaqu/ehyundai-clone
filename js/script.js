@@ -1,5 +1,6 @@
 "use strict";
 
+// slider 
 $(function(){
 
     // basic slider
@@ -10,3 +11,4 @@ $(function(){
         autoplaySpeed: 2000
     });
 });
+
