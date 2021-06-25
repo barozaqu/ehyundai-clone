@@ -11,7 +11,6 @@ $(function(){
     // gnb lnb event
     var $lnb = $('.lnb');
     var $gnbItem = $('.gnb__item');
-    var $gnbList = $('.gnb__list');
     
     // 초기 상태
     $lnb.hide();

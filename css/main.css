@@ -74,15 +74,17 @@
     /* border: 1px solid #000; */
 }
 .gnb__navbar {
-    /* position: relative; */
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 .gnb__item {
     display: flex;
     flex-direction: column;
-    /* position: relative; */
-    /* border: 1px solid #000; */
+    position: relative;
+    /* 이 relative를 없애면 lnb 호버 효과 같이 사라진다 */
+
+    border: 1px solid #000;
     color: #666;
     transition: all .3s;
 }
@@ -131,18 +133,21 @@
     /* border: 1px solid #000; */
 }
 .lnb {
-    padding-top: 24px;
     display: flex;
     position: absolute;
-    width: 984px;
-    left: 0;
-    top: 191px;
-    margin: 0 auto;
     overflow: hidden;
+    /* width 값을 안주면 absolute때문에 날아감 */
+    /* 양 옆을 꽉 채우려고 width 값을 더 크게 주니
+    flex 정렬이 망가짐 */
+    width: 984px;
+    height: 240PX;
+    top: 72px;
+    margin: 0 auto;
+    z-index: 100;
     background: #fff;
-    z-index: 30;
 }
 .lnb__item {
+    padding-top: 14px;
     width: 100%;
     margin-right: 20px;
     /* border: 1px solid blue; */
