@@ -1,8 +1,14 @@
 "use strict";
-// gnb lnb event
+
+
+
+
 
 
 $(function(){
+    
+    
+    // gnb lnb event
     var $lnb = $('.lnb');
     var $gnbTitle = $('.gnb__title');
     var $gnbList = $('.gnb__list');
@@ -20,12 +26,25 @@ $(function(){
         var idx = $(this).index();
         $lnb.eq(idx).show();
     });
+    $gnbList.mouseenter(function(){
+        var idx = $(this).index();
+        $lnb.eq(idx).show();
+    });
     $gnbTitle.mouseleave(function(){
         $lnb.hide();
     });
     
-    // slider 
 
+
+
+    // shopping news fixed
+
+
+
+
+
+
+    // main banner slider 
     $('.main__banner').slick({
         dots: true,
         arrows: true,
@@ -33,7 +52,7 @@ $(function(){
         autoplaySpeed: 2000
     });
 
-    //arrow top
+    // arrow top btn
     var $header = $('#header');
     var $arrowUp = $('#arrowUp');
 
