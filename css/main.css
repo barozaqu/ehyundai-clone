@@ -83,6 +83,7 @@
     flex-direction: column;
     position: relative;
     /* 이 relative를 없애면 lnb 호버 효과 같이 사라진다 */
+    /* 추가로 하단에 생기는 바 효과도 absolute 때문에 커지는 오류 발생 */
 
     border: 1px solid #000;
     color: #666;
