@@ -10,7 +10,7 @@ $(function(){
     
     // gnb lnb event
     var $lnb = $('.lnb');
-    var $gnbTitle = $('.gnb__title');
+    var $gnbItem = $('.gnb__item');
     var $gnbList = $('.gnb__list');
     
     // 초기 상태
@@ -22,15 +22,11 @@ $(function(){
     // gnb__title 로 하면 여백에서 사라짐 오류
     // 부모요소는 gnb__list
     
-    $gnbTitle.mouseenter(function(){
+    $gnbItem.mouseenter(function(){
         var idx = $(this).index();
         $lnb.eq(idx).show();
     });
-    $gnbList.mouseenter(function(){
-        var idx = $(this).index();
-        $lnb.eq(idx).show();
-    });
-    $gnbTitle.mouseleave(function(){
+    $gnbItem.mouseleave(function(){
         $lnb.hide();
     });
     

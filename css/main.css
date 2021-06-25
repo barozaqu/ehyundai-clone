@@ -73,18 +73,21 @@
 .gnb {
     /* border: 1px solid #000; */
 }
-.gnb__list {
-    position: relative;
+.gnb__navbar {
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
 }
-.gnb__title {
-    position: relative;
+.gnb__item {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* border: 1px solid #000; */
     color: #666;
     transition: all .3s;
 }
 /* gnb hover 시 이벤트 */
-.gnb__list:hover ~ .lnb__frame > div {
+.gnb__navbar:hover ~ .lnb__frame > div {
     display: flex;
 }
 .lnb__frame > div:hover {
@@ -93,10 +96,10 @@
 /* 코드 지저분 개선 방안 물어볼 것 */
 
 
-.gnb__title:hover {
+.gnb__item:hover {
     color: #222;
 }
-.gnb__title a:after {
+.gnb__item a:after {
     content : '';
     position: absolute;
     height: 2px;
@@ -107,10 +110,10 @@
     transform: translateX(-50%);
     background: #111;
 }
-.gnb__title a:hover:after {
+.gnb__item a:hover:after {
     width: 100%;
 }
-.gnb__title > a {
+.gnb__item > a {
     height: 72px;
     line-height: 72px;
     font-size: 18px;
@@ -128,8 +131,16 @@
     /* border: 1px solid #000; */
 }
 .lnb {
-    display: flex;
     padding-top: 24px;
+    display: flex;
+    position: absolute;
+    width: 984px;
+    left: 0;
+    top: 191px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    z-index: 30;
 }
 .lnb__item {
     width: 100%;
