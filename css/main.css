@@ -173,102 +173,15 @@
     text-decoration: underline;
 }
 
-/* 기존방식 */
-/* gnb */
-/* .gnb__frame {
-    font-size: 18px;
-    position: relative;
-}
-.gnb {
-
-}
-.gnb__item {
-    display: flex;
-}
-.gnb__item--name {
-    position: relative;
-    height: 72px;
-    letter-spacing: -0.1em;
-    white-space: nowrap;
-} */
-/* 
-.lnb__frame {
-    display: none;
-    position: absolute;
-    z-index: 30;
-    top: 72px;
-    left: 1000px;
-    right: 1000px;
-    overflow: hidden;
-    padding: 0 0 24px 0;
-    min-height: 216px;
-    transition: all 0.8s;
-}
-.lnb {
-}
-.lnb__item {
-    float: left;
-    position: relative;
-    border: 1px solid #000;
-    margin-top: 24px;
-    min-width: 140px;
-}
-.lnb__item--title {
-}
-.lnb__item--title > span {
-    float: left;
-    position: relative;
-    display: block;
-    height: 22px;
-    line-height: 22px;
-    font-size: 14px;
-    font-weight: bold;
-}
-.subnav__frame {
-    position: relative;
-}
-.subnav__item {
-    width: 100px;
-    font-size: 14px;
-    position: absolute;
-}
-.subnav__frame > li:nth-child(1) {
-    top: 0;
-}
-.subnav__frame > li:nth-child(2) {
-    top: 22px;
-}
-.subnav__frame > li:nth-child(3) {
-    top: 44px;
-}
-.subnav__frame > li:nth-child(4) {
-    top: 66px;
-}
-.subnav__frame > li:nth-child(5) {
-    top: 88px;
-}
-.subnav__frame > li:nth-child(6),
-.subnav__frame > li:nth-child(7),
-.subnav__frame > li:nth-child(8),
-.subnav__frame > li:nth-child(9),
-.subnav__frame > li:nth-child(10) {
-    left: 100px;
-}
- */
-
-
 /* arrow top btn */
 .arrow__top {
     position: fixed;
     z-index: 30;
     right: 20px;
     bottom: 20px;
-    opacity: 1;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
+    /* visibility: hidden; */
 }
 .arrow__top > a {
-    display: block;
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -279,9 +192,10 @@
     background-repeat: no-repeat;
     background-position: 0 -96px;
 }
-
-
-
+.visible {
+    /* transition: all 1s; */
+    /* visibility: visible; */
+}
 
 /* contents wrap */
 .contents__container {
@@ -292,10 +206,11 @@
 }
 .main__banner img {
     text-align: center;
+    max-width: 100%;
+    height: 600px;
     /* 본 홈페이지 사이즈와 차이 있음!!!!!!!!!!! */
     /* 줄일 때 같이 줄어든다  */
 }
-
 /* news section - start */
 .news {
     overflow: hidden;
@@ -324,9 +239,16 @@
     width: 100%;
     padding-bottom: 38px;
     color: #fff;
+    background: #fff;
     text-align: left;
     z-index: 20;
 }
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 430px;
+}
+
 .news__list {
     /* margin-left: -40px; */
     font-size: 0;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- jQuery / js -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="./js/slick.min.js"></script>
@@ -63,98 +64,16 @@
               <li class="gnb__title">
                 <a href="#">서비스 · 채널</a>
               </li>
-
-
-              <!-- 기존 방식 -->
-              <!-- local navigation 1 -->
-              <!-- <div class="lnb__frame">
-
-                <ul class="lnb">
-
-                  <li class="lnb__item item-01 clearfix">
-                    <div class="lnb__item--title">
-                      <span>현대백화점 본관</span>
-                    </div>
-
-                    <ul class="subnav__frame frame-01 clearfix">
-                      <li class="subnav__item"><a href="#">더현대 서울</a></li>
-                      <li class="subnav__item"><a href="#">압구정본점</a></li>
-                      <li class="subnav__item"><a href="#">무역센터점</a></li>
-                      <li class="subnav__item"><a href="#">천호점</a></li>
-                      <li class="subnav__item"><a href="#">신촌점</a></li>
-                      <li class="subnav__item"><a href="#">미아점</a></li>
-                      <li class="subnav__item"><a href="#">목동점</a></li>
-                      <li class="subnav__item"><a href="#">중동점</a></li>
-                      <li class="subnav__item"><a href="#">킨텍스점</a></li>
-                      <li class="subnav__item"><a href="#">디큐브시티</a></li>
-                      <li class="subnav__item"><a href="#">판교점</a></li>
-                      <li class="subnav__item"><a href="#">부산점</a></li>
-                      <li class="subnav__item"><a href="#">대구점</a></li>
-                      <li class="subnav__item"><a href="#">울산점</a></li>
-                      <li class="subnav__item"><a href="#">울산동구점</a></li>
-                      <li class="subnav__item"><a href="#">충청점</a></li>
-                    </ul>
-
-                  </li>
-
-
-                  <li class="lnb__item item-02">
-
-                    <div class="lnb__item--title">
-                      <span>U-PLEX</span>
-                    </div>
-
-                    <ul class="subnav__frame clearfix">
-                      <li class="subnav__item">
-                        <a href="#">판교점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">신촌점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">목동점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">중동점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">대구점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">충청점</a>  
-                      </li>
-                      <li class="subnav__item">
-                        <a href="#">디큐브시티</a>  
-                      </li>
-                    </ul>
-                    
-                  </li>
-                  <li class="lnb__item item-03">
-                      <div class="lnb__item--title">
-                        <span>공지사항</span>
-                      </div>
-                      <ul class="subnav__frame">
-                        <div class="subnav__item">
-                        </div>
-                      </ul>
-                  </li>
-
-                  <div class="lnb__event">
-                    <a href="#">
-                      <img src="./img/header/1.png" alt="나에게 꼭 맞춘 혜택과 정보 현대백화점 모바일 앱">
-                    </a>
-                  </div>
-
-                </ul>
-              </div> -->
-              <!-- local navigation 1 end -->
-
-
             </ul>
+
             
             <div class="lnb__frame">
 
+
               <!-- 각 lnb에 다른 class 명/고유 ID를 붙여서 TOGGLE JS로 DISPLAY -->
+              <!-- jquery moseenter시 -->
+              <!-- 위치를 idx랑 this children next 등 사용 해서 구현 -->
+
               <div class="lnb">
                 <div class="lnb__item">
                   <div class="lnb__header">
@@ -516,21 +435,14 @@
     <div class="contents__container">
       
       <!-- main section 아래 스크롤 발생-->
-      <section class="main">
+      <section class="main" id="main">
 
         <div class="main__banner">
           <div><img src="./img/main/bg_fly.jpg" alt=""></div>
           <div><img src="./img/main/bg_together.jpg" alt=""></div>
-          <div><img src="./img/main/happy.jpg" alt=""></div>
         </div>
 
       </section>
-
-      <!-- arrow top btn -->
-      <div class="arrow__top">
-        <a href="#">
-        </a>
-      </div>
 
       <!-- shopping News section -->
       <section class="news section">
@@ -846,6 +758,12 @@
 
         </div>
       </footer>
+      
+      <!-- arrow top btn -->
+      <div id="arrowUp" class="arrow__top">
+        <a href="#">
+        </a>
+      </div>
 
     </div>
     <!-- 아래 스크롤 발생 오류? overflow:hidden으로 해결 -->

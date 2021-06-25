@@ -50,6 +50,7 @@
 .fixed {
     position: fixed;
     top: 0;
+    left: 430px;
 }
 .bottom {
     top: calc(100% - 990px);
