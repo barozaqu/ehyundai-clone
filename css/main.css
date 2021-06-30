@@ -71,7 +71,6 @@
 .gnb__frame {
 }
 .gnb {
-    /* border: 1px solid #000; */
 }
 .gnb__navbar {
     position: relative;
@@ -232,7 +231,7 @@
 .news__inner {
     position: relative;
     min-height: 1162px;
-    padding-top: 120px;
+    padding-top: 150px;
     /* common padding */
 }
 .left__magazine {
