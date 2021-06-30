@@ -81,9 +81,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    /* 이 relative를 없애면 lnb 호버 효과 같이 사라진다 */
-    /* 추가로 하단에 생기는 바 효과도 absolute 때문에 커지는 오류 발생 */
-
     color: #666;
     transition: all .3s;
 }
@@ -116,25 +113,14 @@
     line-height: 72px;
     font-size: 18px;
     font-weight: 600;
-    /* border: 1px solid #000;1` */
 }
-
-
 /* lnb - start */
 .lnb__frame {
-    /* display: flex; */
-    /* display: none; */
-    /* padding-top: 24px; */
-    /* position: relative; */
-    /* border: 1px solid #000; */
 }
 .lnb {
     display: flex;
     position: absolute;
     overflow: hidden;
-    /* width 값을 안주면 absolute때문에 날아감 */
-    /* 양 옆을 꽉 채우려고 width 값을 더 크게 주니
-    flex 정렬이 망가짐 */
     width: 984px;
     height: 240PX;
     top: 72px;
@@ -146,7 +132,6 @@
     padding-top: 14px;
     width: 100%;
     margin-right: 20px;
-    /* border: 1px solid blue; */
     flex: 1;
 }
 .lnb__item:nth-child(1) {
@@ -155,7 +140,6 @@
 }
 .lnb__item:nth-child(3) {
 }
-
 .lnb__img > img {
     width: 100%;
 }
@@ -163,15 +147,12 @@
 .lnb__img > .flex {
     flex-direction: column;
 }
-
-
 .lnb__content {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 200px;
-    /* 높이값 설정해 준 것 수정 가능 한지 여부? */
     color: #666;
     margin-top: 10px;
 }
@@ -232,7 +213,6 @@
     position: relative;
     min-height: 1162px;
     padding-top: 150px;
-    /* common padding */
 }
 .left__magazine {
     position: absolute;
